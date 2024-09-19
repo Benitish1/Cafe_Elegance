@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café_Elegance</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-lg fixed w-full z-10">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="photos/c.jpg" alt="Cafe Logo" class="h-8 w-8">
+        <span class="text-xl font-semibold"><i>Café Elegance</i></span>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#hero" class="hover:text-gray-600">Home</a>
+        <a href="#about" class="hover:text-gray-600">About</a>
+        <a href="#menu" class="hover:text-gray-600">Menu</a>
+        <a href="#contact" class="hover:text-gray-600">Contact</a>
+      </div>
+
+      <div class="md:hidden">
+        <button id="hamburger" class="text-gray-900 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#hero" class="block px-4 py-2">Home</a>
+      <a href="#about" class="block px-4 py-2">About</a>
+      <a href="#menu" class="block px-4 py-2">Menu</a>
+      <a href="#contact" class="block px-4 py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('photos/coffee.jpg');">
+    <div class="text-center text-white px-4">
+      <h1 class="text-4xl md:text-8xl font-bold mb-4">Welcome to <i>Café Elegance</i></h1>
+      <p class="mb-8 text-lg md:text-2xl">A peaceful oasis of joy, where you can relax and enjoy delicious food and drinks,<br> while soaking in the cozy ambiance and friendly atmosphere</p>
+      <a href="#menu" class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Explore Our Menu</a>
+    </div>
+  </section>
+
+  
+ <!-- About Us Section -->
+<div id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Image -->
+        <div class="md:w-1/2 mb-4 md:mb-0">
+          <img src="photos/hg.jpg" alt="About Us" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <!-- Content -->
+        <div class="md:w-1/2 md:ml-8">
+          <h2 class="text-5xl font-semibold mb-10">Welcome to Local Cafe</h2>
+          <p class=" mb-10 mt-10">At Local Cafe, we strive to create a welcoming environment where you can relax and enjoy delicious food and drinks. Our cozy ambiance and friendly staff are here to ensure you have a memorable experience every time you visit.</p>
+          <p class=" mb-10">Whether you're looking for a quiet spot to work, catching up with friends, or simply treating yourself to a delightful meal, Local Cafe is the perfect destination.</p>
+          <p class=" mb-10">In addition to our delightful menu offerings, we also host regular events such as live music nights, trivia evenings, and art showcases. These events provide a vibrant atmosphere where you can connect with the community and enjoy special moments with your loved ones.</p>
+          <a href="#" class=" inline-block bg-yellow-600 text-white text-white py-2 px-4 rounded hover:bg-yellow-700 mt-10">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+ <!-- Menu Section -->
+<div id="menu" class="py-16 bg-white">
+   
+    <div class="container mx-auto px-4">
+     <h2 class="text-3xl font-semibold mb-8 text-center">Our Menu</h2>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+       
+       <!-- Breakfast Items -->
+       <div class="mb-8">
+         <h3 class="text-xl font-semibold mb-4">Breakfast</h3>
+         <ul>
+           <li class="mb-2"><strong>Classic Pancakes</strong> - $8.99</li>
+           <li class="mb-2"><strong>Avocado Toast</strong> - $7.99</li>
+           <li class="mb-2"><strong>French Omelette</strong> - $9.99</li>
+           <li class="mb-2"><strong>Breakfast Burrito</strong> - $8.99</li>
+           <li class="mb-2"><strong>Berry Smoothie Bowl</strong> - $6.99</li>
+         </ul>
+       </div>
+       
+       <!-- Lunch Items -->
+       <div class="mb-8">
+         <h3 class="text-xl font-semibold mb-4">Lunch</h3>
+         <ul>
+           <li class="mb-2"><strong>Grilled Chicken Sandwich</strong> - $10.99</li>
+           <li class="mb-2"><strong>Caesar Salad</strong> - $9.99</li>
+           <li class="mb-2"><strong>Quinoa & Veggie Bowl</strong> - $11.99</li>
+           <li class="mb-2"><strong>BBQ Pulled Pork Sandwich</strong> - $12.99</li>
+           <li class="mb-2"><strong>Tomato Basil Soup</strong> - $7.99</li>
+         </ul>
+       </div>
+       
+       <!-- Drinks -->
+       <div class="mb-8">
+         <h3 class="text-xl font-semibold mb-4">Drinks</h3>
+         <ul>
+           <li class="mb-2"><strong>Latte</strong> - $4.50</li>
+           <li class="mb-2"><strong>Cappuccino</strong> - $4.00</li>
+           <li class="mb-2"><strong>Freshly Brewed Coffee</strong> - $3.00</li>
+           <li class="mb-2"><strong>Herbal Tea</strong> - $3.50</li>
+           <li class="mb-2"><strong>Smoothie</strong> - $5.00</li>
+         </ul>
+       </div>
+ 
+       <!-- Desserts -->
+       <div class="mb-8">
+         <h3 class="text-xl font-semibold mb-4">Desserts</h3>
+         <ul>
+           <li class="mb-2"><strong>Chocolate Cake</strong> - $6.99</li>
+           <li class="mb-2"><strong>Cheesecake</strong> - $7.99</li>
+           <li class="mb-2"><strong>Apple Pie</strong> - $5.99</li>
+           <li class="mb-2"><strong>Ice Cream Sundae</strong> - $4.99</li>
+           <li class="mb-2"><strong>Macarons (3 pcs)</strong> - $5.00</li>
+         </ul>
+       </div>
+ 
+       <!-- Snacks -->
+       <div class="mb-8">
+         <h3 class="text-xl font-semibold mb-4">Snacks</h3>
+         <ul>
+           <li class="mb-2"><strong>Chips and Salsa</strong> - $3.99</li>
+           <li class="mb-2"><strong>Garlic Bread</strong> - $4.99</li>
+           <li class="mb-2"><strong>Hummus and Pita</strong> - $5.99</li>
+           <li class="mb-2"><strong>Fruit Bowl</strong> - $4.99</li>
+           <li class="mb-2"><strong>Cheese Platter</strong> - $8.99</li>
+         </ul>
+       </div>
+ 
+       <!-- Specials -->
+       <div class="mb-8">
+         <h3 class="text-xl font-semibold mb-4">Specials</h3>
+         <ul>
+           <li class="mb-2"><strong>Chef's Special Pasta</strong> - $13.99</li>
+           <li class="mb-2"><strong>Stuffed Bell Peppers</strong> - $12.99</li>
+           <li class="mb-2"><strong>Seasonal Salad</strong> - $11.99</li>
+           <li class="mb-2"><strong>Seafood Platter</strong> - $15.99</li>
+           <li class="mb-2"><strong>Homemade Lasagna</strong> - $14.99</li>
+         </ul>
+       </div>
+ 
+     </div>
+   </div>
+ </div>
+ 
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <div id="menu" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-8 text-center">More About Our Menu</h2>
+      <h2 class="text-2xl  mb-8"><b>Meals</b></h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  
+<div class="relative group mb-8">
+  <div class="w-full h-64 overflow-hidden rounded">
+    <img src="photos/cp.jpeg" alt="Classic Pancakes" class="w-full h-full object-cover  group-hover:opacity-30 transition duration-300 ease-in-out">
+  </div>
+  <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+    <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+  </div>
+  <div class="mt-2 text-center">
+    <strong>Classic Pancakes</strong> - $8.99
+  </div>
+</div>
+
+  
+        <!-- Menu Item 2 -->
+        <div class="relative group mb-8">
+          <div class="w-full h-64 overflow-hidden rounded">
+            <img src="photos/cs.jpg" alt="Grilled Chicken Sandwich" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+            <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+          </div>
+          <div class="mt-2 text-center">
+            <strong>Grilled Chicken Sandwich</strong> - $10.99
+          </div>
+        </div>
+  
+        <!-- Menu Item 3 -->
+        <div class="relative group mb-8">
+          <div class="w-full h-64 overflow-hidden rounded">
+            <img src="photos/salad.jpeg" alt="Caesar Salad" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+            <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+          </div>
+          <div class="mt-2 text-center">
+            <strong>Caesar Salad</strong> - $9.99
+          </div>
+        </div>
+  
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+         <!-- Menu Item 4 -->
+      <div class="relative group mb-8">
+        <div class="w-full h-64 overflow-hidden rounded">
+          <img src="photos/pasta.jpg" alt="Chef's Special Pasta" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+          <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+        </div>
+        <div class="mt-2 text-center">
+          <strong>Chef's Special Pasta</strong> - $13.99
+        </div>
+      </div>
+
+      <!-- Menu Item 5 -->
+      <div class="relative group mb-8">
+        <div class="w-full h-64 overflow-hidden rounded">
+          <img src="photos/omelette.jpg" alt="French Omelette" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+          <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+        </div>
+        <div class="mt-2 text-center">
+          <strong>French Omelette</strong> - $9.99
+        </div>
+      </div>
+
+      <!-- Menu Item 6 -->
+      <div class="relative group mb-8">
+        <div class="w-full h-64 overflow-hidden rounded">
+          <img src="photos/avocado.jpg" alt="Avocado Toast" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+          <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+        </div>
+        <div class="mt-2 text-center">
+          <strong>Avocado Toast</strong> - $7.99
+        </div>
+      </div>
+     
+      
+    </div>
+  </div>
+
+
+
+<div id="menu" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl font-semibold mb-8"><b>Drinks and Desserts</b></h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Menu Item 1 -->
+      <div class="relative group mb-8">
+        <div class="w-full h-64 overflow-hidden rounded">
+          <img src="photos/cappuccino.jpg" alt="Cappuccino" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+          <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+        </div>
+        <div class="mt-2 text-center">
+          <strong>Cappuccino</strong> - $4.00
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="relative group mb-8">
+        <div class="w-full h-64 overflow-hidden rounded">
+          <img src="photos/cf.jpg" alt="Freshly Brewed Coffee" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+          <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+        </div>
+        <div class="mt-2 text-center">
+          <strong>Freshly Brewed Coffee</strong> - $3.00
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div class="relative group mb-8">
+        <div class="w-full h-64 overflow-hidden rounded">
+          <img src="photos/latte.jpeg" alt="Latte" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+          <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+        </div>
+        <div class="mt-2 text-center">
+          <strong>Latte</strong> - $4.50
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Menu Item 4 -->
+   <div class="relative group mb-8">
+     <div class="w-full h-64 overflow-hidden rounded">
+       <img src="photos/apple pie.jpg" alt="Apple Pie" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+     </div>
+     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+      <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+    </div>
+     <div class="mt-2 text-center">
+       <strong>Apple Pie</strong> - $5.99
+     </div>
+   </div>
+
+   <!-- Menu Item 5 -->
+   <div class="relative group mb-8">
+     <div class="w-full h-64 overflow-hidden rounded">
+       <img src="photos/ice cream.jpeg" alt="Ice Cream Sundae" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+     </div>
+     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+      <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+    </div>
+     <div class="mt-2 text-center">
+       <strong>Ice Cream Sundae</strong> - $4.99
+     </div>
+   </div>
+
+   <!-- Menu Item 6 -->
+   <div class="relative group mb-8">
+     <div class="w-full h-64 overflow-hidden rounded">
+       <img src="photos/macarons.jpeg" alt="Macarons" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+     </div>
+     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+      <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+    </div>
+     <div class="mt-2 text-center">
+       <strong>Macarons (3 pcs)</strong> - $5.00
+     </div>
+   </div>
+
+    
+  </div>
+</div>
+
+
+
+<div id="menu" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-2xl mb-8"><b>Snacks</b></h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Menu Item 1 -->
+      <div class="relative group mb-8">
+        <div class="w-full h-64 overflow-hidden rounded">
+          <img src="photos/🍟 chips.jpg" alt="Chips and Salsa" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+          <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+        </div>
+        <div class="mt-2 text-center">
+          <strong>Chips and Salsa</strong> - $3.99
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="relative group mb-8">
+        <div class="w-full h-64 overflow-hidden rounded">
+          <img src="photos/bread.jpg" alt="Garlic Bread" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+          <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+        </div>
+        <div class="mt-2 text-center">
+          <strong>Garlic Bread </strong> - $4.99
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div class="relative group mb-8">
+        <div class="w-full h-64 overflow-hidden rounded">
+          <img src="photos/hummus.jpg" alt="Hummus and Pita" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+          <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+        </div>
+        <div class="mt-2 text-center">
+          <strong>Hummus and Pita</strong> - $5.99
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Menu Item 4 -->
+   <div class="relative group mb-8">
+     <div class="w-full h-64 overflow-hidden rounded">
+       <img src="photos/fruits.jpg" alt="Fruit Bowl" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+     </div>
+     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+      <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+    </div>
+     <div class="mt-2 text-center">
+       <strong>Fruit Bowl</strong> - $4.99
+     </div>
+   </div>
+
+   <!-- Menu Item 5 -->
+   <div class="relative group mb-8">
+     <div class="w-full h-64 overflow-hidden rounded">
+       <img src="photos/cheese.jpeg" alt="Cheese Platter" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+     </div>
+     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+      <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+    </div>
+     <div class="mt-2 text-center">
+       <strong>Cheese Platter</strong> - $8.99
+     </div>
+   </div>
+
+   <!-- Menu Item 6 -->
+   <div class="relative group mb-8">
+     <div class="w-full h-64 overflow-hidden rounded">
+       <img src="photos/pretzels.jpg" alt="Pretzels with Mustard Dip" class="w-full h-full object-cover group-hover:opacity-30 transition duration-300 ease-in-out">
+     </div>
+     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+      <button class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Order Now</button>
+    </div>
+     <div class="mt-2 text-center">
+       <strong>Pretzels with Mustard Dip</strong> - $4.50
+     </div>
+   </div>
+  </div>
+</div>
+
+
+ <!-- Contact Us Section -->
+<div id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold mb-8 text-center">Contact Us</h2>
+      <div class="max-w-4xl mx-auto">
+        <p class="mb-6">Have a question or want to leave feedback? Fill out the form below and we'll get back to you as soon as possible.</p>
+        <form class="w-full">
+          <div class="flex flex-wrap -mx-4 mb-6">
+            <div class="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+              <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-200 text-gray-800" required>
+            </div>
+            <div class="w-full md:w-1/2 px-4">
+              <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-200 text-gray-800" required>
+            </div>
+          </div>
+          <div class="mb-6">
+            <textarea placeholder="Your Message" class="w-full p-3 rounded bg-gray-200 text-gray-800" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-red-600 text-white py-3 rounded hover:bg-red-700">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- Add Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-gray-200 py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Opening Hours Section -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Opening Hours</h3>
+        <ul>
+          <li class="mb-2"><strong>Monday:</strong> 8:00 AM - 8:00 PM</li>
+          <li class="mb-2"><strong>Tuesday:</strong> 8:00 AM - 8:00 PM</li>
+          <li class="mb-2"><strong>Wednesday:</strong> 8:00 AM - 8:00 PM</li>
+          <li class="mb-2"><strong>Thursday:</strong> 8:00 AM - 8:00 PM</li>
+          <li class="mb-2"><strong>Friday:</strong> 8:00 AM - 10:00 PM</li>
+          <li class="mb-2"><strong>Saturday:</strong> 9:00 AM - 10:00 PM</li>
+          <li class="mb-2"><strong>Sunday:</strong> 9:00 AM - 6:00 PM</li>
+        </ul>
+      </div>
+      
+      <!-- Contact Section -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+        <ul>
+          <li class="mb-2"><strong>Address:</strong> 123 Cafe Street, City, State</li>
+          <li class="mb-2"><strong>Phone:</strong> (123) 456-7890</li>
+          <li class="mb-2"><strong>Email:</strong> info@cafelegance.com</li>
+        </ul>
+        <div class="mt-4">
+          <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-gray-400">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="hover:text-gray-400">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="hover:text-gray-400">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="hover:text-gray-400">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="hover:text-gray-400">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Newsletter Subscription Section -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+        <p class="mb-4">Subscribe to our newsletter to get the latest updates and offers.</p>
+        <form>
+          <input type="email" placeholder="Your email" class="w-full p-2 mb-4 rounded bg-gray-700 text-gray-200" required>
+          <button type="submit" class="w-full p-2 bg-red-600 text-gray-200 rounded hover:bg-red-700">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="mt-12 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="text-center md:text-left mb-4 md:mb-0">
+        <span>&copy; 2024 Café Elegance. All rights reserved.</span>
+      </div>
+      <div class="flex space-x-4">
+        <a href="#hero" class="hover:text-gray-400">Home</a>
+        <a href="#about" class="hover:text-gray-400">About</a>
+        <a href="#menu" class="hover:text-gray-400">Menu</a>
+        <a href="#contact" class="hover:text-gray-400">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+<script>
+  document.getElementById('hamburger').addEventListener('click', function () {
+    var menu = document.getElementById('mobile-menu');
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+    } else {
+      menu.classList.add('hidden');
+    }
+  });
+</script>
+  
+</body>
+</html>
